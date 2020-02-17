@@ -188,7 +188,7 @@ $(document).ready(function() {
                     $(".print-error-msg").css('display','none');
                     $("table tbody").prepend("<tr  class='show" + data.id + "'><td>" + data.id + "</td><td>" + data.season + "</td><td>" + data.episode + "</td><td>" + data.quote + "</td><td><img src="+data.image+"></td><td><a data-toggle='modal' data-target='#updatetvshowDialog' data-id="+ data.id +" data-season="+data.season+" data-episode="+data.episode+" data-quote="+data.quote+" class='open-updatetvshowDialog btn btn-primary '><span>Edit</span></td><td><span class=' btn btn-danger deleteplan' onclick='return confirm('Are you sure?')' data-del-id="+ data.id +">Delete</span></td></tr>");
                     $("#addshow").modal('hide'); 
-                    $("#emptyshowdata").hide(); 
+                    $(".emptyshowdata").hide(); 
                     
                 }else{
 
